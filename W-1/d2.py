@@ -31,8 +31,15 @@
 # numbers = (3, 5, 6, 8, 10)
 # print(numbers)
 # # numbers[2] = 7  # This will raise an error because tuples are immutable
-
 # print(len(numbers), max(numbers), min(numbers), sum(numbers))
+
+# If you are not using trailing comma, it will be considered as an integer, not a tuple. 
+# To create a tuple with a single element, you need to include a trailing comma.
+not_a_tuple = (5)
+print(type(not_a_tuple)) 
+
+is_a_tuple = (5,)
+print(type(is_a_tuple))
 
 
 # # ===> SET
@@ -61,25 +68,25 @@
 # ===> DICTIONARY
 # # Dictionary is an unordered collection of key-value pairs. It is mutable, meaning that we can change its content after creation.
 
-student = {
-    "name": "Alice",
-    "age": 20,
-    "marks": [85, 90, 95]
-}
-print(student.get("name"))  # Accessing value using key
-print(student["age"])  # Accessing value using key  
-student["age"] = 21  # Modifying value using key
-student["marks"].append(100)  # Modifying value using key
-student["city"] = "New York"  # Adding a new key-value pair
+# student = {
+#     "name": "Alice",
+#     "age": 20,
+#     "marks": [85, 90, 95]
+# }
+# print(student.get("name"))  # Accessing value using key
+# print(student["age"])  # Accessing value using key  
+# student["age"] = 21  # Modifying value using key
+# student["marks"].append(100)  # Modifying value using key
+# student["city"] = "New York"  # Adding a new key-value pair
 # print(student)
 
 # iteration 
 
-for key in student:
-    print(key, ":", student[key])
+# for key in student:
+#     print(key, ":", student[key])
 
-for key, value in student.items():
-    print(key, ":", value)    
+# for key, value in student.items():
+#     print(key, ":", value)    
     
 # --> Dictonary methods
 # student.keys()
